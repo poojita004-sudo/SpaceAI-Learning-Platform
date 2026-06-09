@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SpaceAI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>🪐 SpaceAI</h2>
+
+        <a href="#">🏠 Dashboard</a>
+        <a href="planets.html">🪐 Planets</a>
+        <a href="#">🤖 AI Tutor</a>
+        <a href="#">📝 Quiz</a>
+        <a href="#">📊 Comparison</a>
+    </div>
+
+    <div class="main">
+
+        <h1>Welcome, <span id="username"></span> 🚀</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>8</h2>
+                <p>Planets</p>
+            </div>
+
+            <div class="card">
+                <h2>10</h2>
+                <p>Quiz Questions</p>
+            </div>
+
+            <div class="card">
+                <h2>AI</h2>
+                <p>Space Tutor</p>
+            </div>
+
+            <div class="card">
+    <h2>100%</h2>
+    <p>Progress</p>
+</div>
+<div class="card">
+    <h2 id="userEmail"></h2>
+    <p>User Email</p>
+</div>
+
+        </div>
+       
+</div>
+
+    </div>
+
+</div>
+
+<script>
+document.getElementById("username").innerHTML =
+localStorage.getItem("name");
+
+document.getElementById("userEmail").innerHTML =
+localStorage.getItem("email");
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Tutor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+<h2>🪐 SpaceAI</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+<a href="planets.html">🪐 Planets</a>
+<a href="tutor.html">🤖 AI Tutor</a>
+<a href="quiz.html">📝 Quiz</a>
+<a href="#">📊 Comparison</a>
+</div>
+
+<div class="main">
+
+<h1>🤖 AI Space Tutor</h1>
+
+<input type="text" id="question"
+placeholder="Ask about planets..." style="width:70%;padding:15px;">
+
+<button onclick="askAI()">Ask AI</button>
+
+<div id="answer"
+style="margin-top:20px;font-size:20px;">
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function askAI(){
+
+let q=document.getElementById("question").value.toLowerCase();
+
+let answer="";
+
+if(q.includes("mars")){
+answer="Mars is called the Red Planet. It is the fourth planet from the Sun.";
+}
+
+else if(q.includes("earth")){
+answer="Earth is the third planet from the Sun and the only known planet that supports life.";
+}
+
+else if(q.includes("jupiter")){
+answer="Jupiter is the largest planet in the Solar System and has a giant storm called the Great Red Spot.";
+}
+
+else if(q.includes("saturn")){
+answer="Saturn is famous for its beautiful rings made of ice and rock particles.";
+}
+
+else if(q.includes("venus")){
+answer="Venus is the hottest planet in our Solar System because of its thick atmosphere.";
+}
+
+else if(q.includes("mercury")){
+answer="Mercury is the closest planet to the Sun and the smallest planet in our Solar System.";
+}
+
+else if(q.includes("uranus")){
+answer="Uranus rotates on its side and appears blue-green due to methane gas.";
+}
+
+else if(q.includes("neptune")){
+answer="Neptune is the farthest planet from the Sun and has very strong winds.";
+}
+
+else if(q.includes("sun")){
+answer="The Sun is a star at the center of our Solar System.";
+}
+
+else if(q.includes("solar system")){
+answer="The Solar System consists of the Sun and 8 planets orbiting around it.";
+}
+
+else{
+answer="Try asking about Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Sun or Solar System.";
+}
+
+document.getElementById("answer").innerHTML=answer;
+
+}
+</script>
+
+</body>
+</html>

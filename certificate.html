@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Certificate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="certificate">
+
+    <div class="certificate-box">
+
+        <h4>🚀 SPACE AI LEARNING PLATFORM</h4>
+        <p style="color:#666;">
+Interactive AI Learning Platform
+</p>
+
+        <h1>CERTIFICATE OF COMPLETION</h1>
+        <div class="seal">🏅</div>
+
+        <p>This Certificate is Proudly Presented To</p>
+
+        <h2 id="studentName"></h2>
+
+        <p>
+            For successfully completing the
+            <b>Interactive AI Learning Program</b>
+            and demonstrating excellence in Space Science Learning.
+        </p>
+        
+      <div class="signature-section">
+
+    <div class="signature-box">
+        <h2 class="sign">Dr. CH. Dharma Rao</h2>
+        <p>Instructor Signature</p>
+    </div>
+
+    <div class="signature-box">
+        <h2 id="date"></h2>
+        <p>Date</p>
+    </div>
+
+</div>
+
+        <button onclick="window.print()">
+            🏆 Download Certificate
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+document.getElementById("studentName").innerHTML =
+localStorage.getItem("name");
+
+document.getElementById("date").innerHTML =
+new Date().toLocaleDateString("en-GB");
+</script>
+
+</body>
+</html>
